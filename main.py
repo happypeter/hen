@@ -1,2 +1,2 @@
-f=open("/root/s.txt","rw");
+f=open("/var/axtu/asianux-auth","rw");
 print f.readline()
