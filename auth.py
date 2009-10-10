@@ -1,4 +1,4 @@
-def get_ak()
+def get_ak():
 	f=open("/var/axtu/asianux-auth","rw");
 	print f.readline()
 
