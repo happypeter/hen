@@ -1,5 +1,9 @@
 import os
 def get_ak():
+	"""
+	what shall be done here is actually get aktk and add them to yum baseurl
+
+	"""
 	f=open("/var/axtu/asianux-auth","rw");
 	print f.readline()
 def exe_auth_client():
