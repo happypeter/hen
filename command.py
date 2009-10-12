@@ -4,7 +4,10 @@
 import sys
 import os
 def exe_auth_client():
-        os.system("ls")
+	s = "ls"
+	arg = " -l"
+	s_arg= s+arg
+        os.system(s_arg)
 for arg in sys.argv:
 	print arg
 	exe_auth_client()
