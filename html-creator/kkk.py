@@ -5,6 +5,7 @@
 # TODO:
 # 1. add sth like <go to homepage> into each file
 # 2. and all the other good tags for general use
+# 3. read out the first line of each file as its desc in index.html
 import os
 ooo=os.listdir('./')
 #everything is read into list ooo
