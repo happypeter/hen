@@ -5,4 +5,4 @@ print l
 n=l[4:]
 print n;
 
-
+print n.replace("4","")
