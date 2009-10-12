@@ -1,6 +1,10 @@
 #here I want a html creator, doing 
 # 1. read all the file name in a dir
-
+# 2. wirite all the names into ./peter-html/index.html
+# 3. add links
+# TODO:
+# 1. add sth like <go to homepage> into each file
+# 2. and all the other good tags for general use
 import os
 ooo=os.listdir('./')
 #everything is read into list ooo
@@ -10,14 +14,18 @@ os.makedirs("peter-html/html")
 f=open("./peter-html/index.html","w");
 f.write("<h1>Index</h1>")
 for s in ooo:
-    os.system("cp " + s + " " + s + ".html")
+    os.system("cp "+s+" "+s+".txt")
+#we use .txt rather than .html as extention
+#thus we do not need add <pre> into the files to make lines stand in different line
     f.write('<a href="./html/')
-    f.write(s+".html")
+    f.write(s+".txt")
     f.write('">')
     f.write(s)
-    f.write('</a>---<br>\n')
-    k=open(s,"w")
-    k.wirte("<pre>")
+    f.write('</a><br>\n')
+f.close() #close index.html
+os.system("mv  *.txt ./peter-html/html/")
 
-os.system("mv  *.html ./peter-html/html/")
+ppp=os.listdir('./peter-html/html/')
+for ss in ppp:
+    print ss
 
