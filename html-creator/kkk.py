@@ -28,4 +28,4 @@ os.system("mv  *.txt ./peter-html/html/")
 ppp=os.listdir('./peter-html/html/')
 for ss in ppp:
     print ss
-
+    #we want to add some tags into each file to make them pretty
