@@ -5,7 +5,9 @@ import os
 
 ooo=os.listdir('./')
 #everything is read into list ooo
-print ooo[1]
+ooo.sort()#sorted items are easier to locate
 os.makedirs("peter-html")#create dir to store all the output
 f=open("./peter-html/index.html","w");
+for s in ooo:
+    f.write(s+"\n")
 
