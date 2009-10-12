@@ -7,6 +7,7 @@
 # 2. and all the other good tags for general use
 # 3. read out the first line of each file as its desc in index.html
 import os
+
 def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
@@ -15,11 +16,13 @@ def ensure_dir(f):
 ooo=os.listdir('./')
 #everything is read into list ooo
 ooo.sort()#sorted items are easier to locate
-#os.makedirs("peter-html")#create dir to store all the output
-#os.makedirs("peter-html/html")
-ensure_dir("./peter-html")
-ensure_dir("./peter-html/html")
 
+#create dir to store all the output
+#ensure_dir("./peter-html")
+#ensure_dir("./peter-html/html")
+os.makedirs("./peter-html")
+os.makedirs("./peter-html/html")
+   
 f=open("./peter-html/index.html","w");
 f.write("<h1>Index</h1>")
 for s in ooo:
