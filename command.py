@@ -3,12 +3,13 @@
 #argecho.py
 import sys
 import os
-def exe_auth_client():
+def exe_auth_client(arg):
 	s = "ls"
-	arg = " -l"
-	s_arg= s+arg
+#	arg = " -l"
+	s_arg= s+" "+arg
         os.system(s_arg)
-for arg in sys.argv:
-	print arg
-	exe_auth_client()
+#for arg in sys.argv:
+#	print arg
+
+exe_auth_client(sys.argv[1])
 
