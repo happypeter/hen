@@ -1,8 +1,10 @@
-#here "ak =3242" in the file asianux-auth
-f=open("asianux-auth","rw");
+#here "ak =1243" in the file asianux-auth
+f=open("asianux-auth","r");
 l= f.readline()
 print l
 n=l[4:]
 print n;
 
-print n.replace("4","")
+ll=n.replace("4","")
+f=open("dup_asianux-auth","w");
+f.write(ll)
