@@ -10,3 +10,5 @@ pet@pet-desktop:~/moin-1.8.5/MoinMoin/formatter$ text_docbook.py
 Maybe I can write my own wiki/docbook convertor modifying the above file
 and wirite another index generator, then every thing in kdocs/
 is clear structured and beautiful.
+
+This is really all I want
