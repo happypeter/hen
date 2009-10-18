@@ -1,0 +1,4 @@
+= Design Goal =
+kdocs    ----<book> name
+son-dirs   ----<chapter> name
+grandson   ----<sect> name
