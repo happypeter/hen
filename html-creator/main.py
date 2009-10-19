@@ -7,12 +7,17 @@
 # 2. and all the other good tags for general use
 # 3. read out the first line of each file as its desc in index.html
 import os
-import list
+
 
 def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
         os.makedirs(d)
+dir=os.popen("python ./list.py").read()
+print dir
+listtt=dir.split('\n')
+print "ppppppppppp"
+print listtt
 
 ooo=os.listdir('./')
 #everything is read into list ooo
