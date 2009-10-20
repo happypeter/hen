@@ -18,7 +18,7 @@ def lister(dummy, dirname, filesindir):
         path = os.path.join(dirname, fname)
         if not os.path.isdir(path):
             print path
-
+#walk into each dirs under the top node and run lister for everything
 os.path.walk('.', lister, None)
 
 
@@ -33,7 +33,7 @@ f.write("<h1>Index</h1>")
 for s in listtt:
     lists = s.split('/')
     n = len(lists)
-    f.write(n*html_tab)
+    f.write(n*html_tab) #do nice indention
     f.write('<a href="')
     f.write(s)
     f.write('">')
