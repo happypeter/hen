@@ -8,7 +8,21 @@
 # 3. read out the first line of each file as its desc in index.html
 import os
 html_tab="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-dir=os.popen("python ./list.py").read()
+
+#with this module, we will be able to handle subdirs
+import sys
+sys.stdout = open("log.txt",'a')
+def lister(dummy, dirname, filesindir):
+    print '[' + dirname + ']'
+    for fname in filesindir:
+        path = os.path.join(dirname, fname)
+        if not os.path.isdir(path):
+            print path
+
+os.path.walk('.', lister, None)
+
+
+dir= open("log.txt",'r').read()
 dir = dir.replace('[','')
 dir = dir.replace(']','')
 listtt=dir.split('\n')
