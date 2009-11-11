@@ -13,6 +13,7 @@ def get_ak():
 	"""
 	f=open("/var/axtu/asianux-auth","rw");
 	print f.readline()
+
 def exe_auth_client():
 	os.system("/usr/share/axtu-authen-client/bin/axtu-authen-client-cui")
 from yum.plugins import PluginYumExit, TYPE_CORE, TYPE_INTERACTIVE
