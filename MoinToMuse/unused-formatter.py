@@ -28,7 +28,7 @@ for name in namelist:
     #below is for the sake of getting clean words, the fileFF should not be saved
     fileFF = file.replace("."," ")
     fileFF = fileFF.replace(")"," ")
-    fileFF = fileFF.replace("\n"," ")
+    fileFF = fileFF.replace("\n"," ") # maybe we can try rstrip() to avoid ^M problem
     wordlist = fileFF.split(" ")
     sys.stdout = open(name,'a')
     for word in wordlist: # check CamelWords embrace them [[]]
