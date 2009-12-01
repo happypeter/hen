@@ -8,6 +8,17 @@ def generate_ak():
     id, pw, pn = read_user_info()
     cmd = cui_exe+" -i "+ id + " -p "+ pw +" -n "+ pn
     os.system(cmd) #see edocs/AddAuth for details
+def reg_or_acc():
+	"""
+	here we need to sent ak and hardware hash to auth_server 
+	if ak is right, and HW hash matches: 
+		generate tk
+	else:
+		call auth_client to register again
+	
+	NOTE: since we are going to change auth logic, so this fun is to be not implemented now	
+	"""
+
 def get_ak():
 	"""
 	what shall be done here is actually get aktk and add them to yum baseurl
@@ -25,9 +36,13 @@ def get_ak():
         return f.readline()# maybe rstrip() is needed?
 
 def change_url_for_yum():
+	"""
+	insert ak:tk to conf:baseurl
+	"""
     #FIXME
-from yum.plugins import PluginYumExit, TYPE_CORE, TYPE_INTERACTIVE
 
+
+from yum.plugins import PluginYumExit, TYPE_CORE, TYPE_INTERACTIVE
 requires_api_version = '2.3'
 plugin_type = (TYPE_CORE, TYPE_INTERACTIVE)
 
