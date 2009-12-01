@@ -47,7 +47,10 @@ def change_url_for_yum():
 	insert ak:tk to /etc/yum.repo.d/conf:baseurl
 	"""
     #FIXME
-
+def cleanup():
+	"""
+	before the plugin dies
+	"""
 
 from yum.plugins import PluginYumExit, TYPE_CORE, TYPE_INTERACTIVE
 requires_api_version = '2.3'
@@ -56,7 +59,9 @@ plugin_type = (TYPE_CORE, TYPE_INTERACTIVE)
 def init_hook(conduit):
 	conduit.info(2, 'Hello world')
 	get_ak()
+	get_tk()
 	change_url_for_yum()
+	cleanup()
 def postreposetup_hook(conduit):
 	raise PluginYumExit('Goodbye')
 
