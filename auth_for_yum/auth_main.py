@@ -34,10 +34,17 @@ def get_ak():
 	f=open(ak_file,"rw");
 	print f.readline()
         return f.readline()# maybe rstrip() is needed?
+def get_tk():
+	"""
+        since auth_logic is going to be changed, so this fun is to be modified in the future
+	since tk is quickly deleted by axtu, so some times this func will fail
+	I am planning to change auth_client itself to make this garenteed
+	"""
+	# see ../get_tk.py
 
 def change_url_for_yum():
 	"""
-	insert ak:tk to conf:baseurl
+	insert ak:tk to /etc/yum.repo.d/conf:baseurl
 	"""
     #FIXME
 
