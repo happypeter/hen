@@ -15,7 +15,7 @@ kw=form['keyword'].value
 print html % ("search:: %s"%kw)
 print "\n"
 cmd="ls|grep "+kw
-#print "running cmd:"+cmd
+#print "running cmd: "+cmd
 os.chdir("/var/www/")
 out=os.popen(cmd).read()
 if not out:
