@@ -1,3 +1,13 @@
 I rename this repo from *python* to *hen*
 
 *hen* produces eggs, which will be the infant of other projects
+
+and I can use the below if one day I want a egg:
+
+    http://help.github.com/splitting-a-subpath-to-a-new-repo/
+
+    peter@cow:~/x-github/hen$ git filter-branch  --subdirectory-filter youku/
+    Rewrite 7edb766c7420249aa4301d9a2587e38714f566ef (2/2)
+    Ref 'refs/heads/master' was rewritten
+    peter@cow:~/x-github/hen$ ls
+
