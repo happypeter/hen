@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "what is the name of the movie:"
+read dirname
+cd /tmp
+ls -l|grep Fla|awk -F" " '{ print $7" "$8}' |sort|awk -F" " '{ print  $2 }'|./peter
+mkdir $HOME/Desktop/$dirname
+echo "copying file, plz wait..."
+mv movie* $HOME/Desktop/$dirname
+echo "done"
+
