@@ -7,7 +7,7 @@ do
     if [ -z $file ]
     then
         echo "no file..now\nplz go to youku.com and wait for the downloading to finish first"
-        exit 1
+        break
     fi
     sed '1d' youku.tmp >youku2.tmp #remove the first line of the file
     mv youku2.tmp youku.tmp
