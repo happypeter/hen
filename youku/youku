@@ -6,7 +6,7 @@ do
     read file<youku.tmp
     if [ -z $file ]
     then
-        echo "no file..now"
+        echo "no file..now\nplz go to youku.com and wait for the downloading to finish first"
         exit 1
     fi
     sed '1d' youku.tmp >youku2.tmp #remove the first line of the file
