@@ -1,4 +1,5 @@
 from Tkinter import *
+import os
 
 class App:
 
@@ -10,11 +11,11 @@ class App:
         self.button = Button(frame, text="QUIT", fg="red", command=frame.quit)
         self.button.pack(side=LEFT)
 
-        self.hi_there = Button(frame, text="Hello", command=self.say_hi)
+        self.hi_there = Button(frame, text="Convert", command=self.say_hi)
         self.hi_there.pack(side=LEFT)
 
     def say_hi(self):
-        print "hi there, everyone!"
+        os.system("echo peter");
 
 root = Tk()
 
