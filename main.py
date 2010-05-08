@@ -20,10 +20,10 @@ class App:
         self.openFile.pack(side=LEFT)
 
     def convert(self):
-        testInputFile = "/home/vivion/Desktop/music/steve/video/2"
-        os.system("/home/vivion/convertor/convert.sh "+testInputFile)
+        os.system("/home/vivion/convertor/convert.sh "+filename)
 
 def open_it():
+    global filename 
     filename = tkFileDialog.askopenfilename()
     print filename
 
