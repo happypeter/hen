@@ -11,11 +11,12 @@ class App:
         self.button = Button(frame, text="QUIT", fg="red", command=frame.quit)
         self.button.pack(side=LEFT)
 
-        self.hi_there = Button(frame, text="Convert", command=self.say_hi)
+        self.hi_there = Button(frame, text="Convert", command=self.convert)
         self.hi_there.pack(side=LEFT)
 
-    def say_hi(self):
-        os.system("echo peter");
+    def convert(self):
+        testInputFile = "/home/vivion/Desktop/music/steve/video/2"
+        os.system("/home/vivion/convertor/convert.sh "+testInputFile)
 
 root = Tk()
 
