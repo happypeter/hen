@@ -1,0 +1,15 @@
+http://qixinglu.com/archives/vim_is_ascii_player
+
+ 2058  sudo apt-get install mplayer
+ 2068  mkdir jpg pgm txt
+ 2069  cd jpg
+ 2070  mplayer -vo jpeg ../bad_apple.flv
+ 2076  sudo apt-get install imagemagick
+ 2077  for i in *.jpg; do convert -colorspace gray $i ../pgm/${i%.jpg}.pgm; done
+ 2078  sudo apt-get install aview
+ 2079  cd ../pgm
+ 2080  for i in *.pgm; do echo q | aview -driver stdout -kbddriver stdin -contrast 32 $i | sed -n '27,+24p' > ../txt/${i%.pgm}.txt; done
+ 2081  cd ../txt
+ 2082  cat *.txt > ../bad_apple.txt
+ 2083  vim ascii_player.vim
+ 2087  vim bad_apple.txt 
