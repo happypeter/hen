@@ -16,3 +16,9 @@ xxxxxx
  - and the block is maybe only ten 10mins
  - anyway, keep it playing, do not press ||
  - finally cp /tmp ~/Desktop/
+
+## upload succeed
+
+	ffmpeg -i out.ogv out.flv
+
+and then justupload in firefox and it is done
