@@ -4,6 +4,7 @@ function! AsciiPlayer()
     set columns=80        
     set lines=26           
     normal gg
+    !mplayer bad_apple.mp3  2>/dev/null 1>/dev/null &
     let i = 1
     while i < 3283
         execute "normal 25\<CR>zt"
