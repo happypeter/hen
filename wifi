@@ -1,26 +1,13 @@
 ok, now things are kind of messy.
 # wifi
 
-check with `iwconfig`, and I know wiki is valid in INSPIRON+10.04, but not on VOSTRO+9.10
+now I have ubuntu 910 for both INSPIRON and VOSTRO, but on VOSTRO you need to enable the driver manually:
 
-so I go to sys->admin->hardware and installed the broadcom wireless driver for my VOSTRO
+	I go to sys->admin->hardware and installed the broadcom wireless driver for my VOSTRO
+	and reboot, but `iwconfig ` still give me nothing about WLan, shit!
+	then I nothice there were acttually another driver avaiable there, 
+	so I tried, and now I get my wireless connection through *eth2* (not Wlan0 as on INSPIRON)
 
-and reboot, but `iwconfig ` still give me nothing about WLan, shit!
-
-then I nothice there were acttually another driver avaiable there, so I tried, and now I get my wireless connection through *eth2* (not Wlan0 as on INSPIRON)
-
-### I use this on VOSTRO when I messed up my connections and firefox failed to fetch pages.
-
-	root@bull:~# /etc/init.d/networking restart
-
-dnsmasq - A lightweight DHCP and caching DNS server.
-
-
-if you run `ifdown eth2` and see
-
-	eth2 not configured
-
-you can fix this by run `ifconfig eth2 up` first
 
 ## dhcp3-server
 
