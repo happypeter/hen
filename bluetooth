@@ -1,0 +1,23 @@
+
+# bluetooth
+
+	peter@bull:~/edocs/plaintext$ lsusb |grep -i blue
+	Bus 003 Device 003: ID 413c:8126 Dell Computer Corp. Wireless 355 Bluetooth
+	peter@bull:~/edocs/plaintext$ 
+
+## tools on ubuntu for bluetooth
+
+	peter@bull:~/edocs/plaintext$ man hci
+	hciattach  hciconfig  hcitool  
+
+## bios->wireless->bluetooth
+
+the default is *enable*
+
+## NDISwrapper
+
+people http://ubuntuforums.org/showthread.php?t=250638
+say you need to use the firmfire that comes with windowsXP to help
+ubuntu use the INSPIRON 6400 bluetooth
+
+SO, I will give up for now
