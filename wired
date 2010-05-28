@@ -23,4 +23,4 @@ what happened is:
 	once this is done, ping www.baidu.com will fail
 
 2.	want to bring wired connection back? easy! go to the NM tray icon, click to disconnect `v1`
-	and do sth like 'service networking restart'&&`ifup -a`, that is all
+	and do sth like 'service networking restart'&&`ifup -a`(or ocassionly `pon dsl-provider`), that is all
