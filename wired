@@ -1,0 +1,14 @@
+in YANTAI my wired connection is pppoe
+
+now my pppoe is running well, I must wirte down the current look of my system
+
+1.	the tray icon of NetworkManager shows wired connection disconnected
+2.	ifconfig eth0 has no ip
+3.	dhclient eth0---will fail
+4.	somethimes you see "wired connection not managed"
+	this does not matter, try NOT to change `/etc/NetworkManager/nm-system-settings.conf`
+	even though it will get rid of the "not managed", but actually when you run `ppoeconf`
+	you will see the WARNING about `ifup -a` disabled because of this. SO JUST DO NOTHING!
+
+
+	
