@@ -1,0 +1,5 @@
+so NetworkManger is not really friendly with my pppoe connection.
+even when pppoe is up and running well, NetworkManger still believes it is disconnected.
+that explains well, why when I set up a wlan, the wired connection is disabled automatically.
+it is simply because NetworkManger sees wired is disconnect, so he will always try to connect to 
+valid connection, thus disabled my atcully up-and-running wired connection.

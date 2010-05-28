@@ -1,0 +1,50 @@
+# wifi setup
+
+now I have ubuntu 910 for both INSPIRON and VOSTRO, but on VOSTRO you need to enable the driver manually:
+
+	I go to sys->admin->hardware and installed the broadcom wireless driver for my VOSTRO
+	and reboot, but `iwconfig ` still give me nothing about WLan, shit!
+	then I nothice there were acttually another driver avaiable there, 
+	so I tried, and now I get my wireless connection through *eth2* (not Wlan0 as on INSPIRON)
+
+
+## server side configration
+
+just go to NetworkManager(NM) sys tray, click "creat new wireless network", easy.
+then connect server machine itself to the connection first.
+
+if you run `iwconfig` now you shall see the wlan interface is configured with essid and stuff...
+
+### no need to install dhcp3-server
+
+because for the time being the INSPIRON machine is still fresh and no dhcp3-server is installed
+so maybe dnsmasq is used here to be the DHCP server. 
+
+## client side configuration
+
+basiclly no configuration for the client side, just click the ad-hoc connection from the server
+that is all.
+
+and on client side, `ifwconfig` shows no conf for wireless card.
+
+when I install 9.10 on INSPIRON, the ad-hoc wireless net work I configured on VOSTRO
+namely `no-crypt-peter`
+
+all you need to do now in INSPIRON, is just one clike on no-crypt-peter
+
+and the ip of INSPIRON is confiured to 10.1.43.10
+well VOSTRO is 10.1.43.1
+
+ssh done
+
+	ssh peter@10.1.43.1
+
+have a `vivion-ad-hoc` on INSPIRON, then I can ping from VOSTRO to INSPIRON as well
+
+## NOTE:
+
+is you need to have both machine connected to a same network
+one as server and one as client. Say I created a vivion-ad-hoc connection on INSPIRON, then first I need to connect INSPIRON itself to this vivion-ad-hoc, then I switch to VOSTRO, I can find the vivion-ad-hoc, by click thetray icon, and then click to connect, the ip is got, and the connection is done. no "dhcpclient eth2" is needed.
+
+## misc
+
