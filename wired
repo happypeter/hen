@@ -3,6 +3,8 @@ in YANTAI my wired connection is pppoe
 now my pppoe is running well, I must wirte down the current look of my system
 
 1.	the tray icon of NetworkManager shows wired connection disconnected
+	A: I think this is simply because NM failed to fetch a IP for local eth0
+	while actully the pppoe connection does not require that.
 2.	ifconfig eth0 has no ip
 3.	dhclient eth0---will fail
 4.	somethimes you see "wired connection not managed"
