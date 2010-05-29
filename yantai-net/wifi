@@ -52,3 +52,4 @@ OK, so now I can easily add a ad-hoc connection with NM, and the communication o
 Now what i did is to go the the server side and run "pon dsl-provider" and wait for 30 second or so, then "ping www. baidu.com" on server and clent side both done!
 
 easy and no extra config is required, the problem is that the internect connection is not so stable, I do not know why.
+But finally I can use VOSTRO to surf, when the cable is plug into INSPIRON, great!
