@@ -24,3 +24,9 @@ what happened is:
 
 2.	want to bring wired connection back? easy! go to the NM tray icon, click to disconnect `v1`
 	and do sth like 'service networking restart'&&`ifup -a`(or ocassionly `pon dsl-provider`), that is all
+
+## tips
+
+sometimes when you run `ifconfig` and you will find out there are more than one `ppp` interface
+and the IP binding with them are different. I think it happens when I run "pon dsl-provider"  more
+then once. Anyway, it does not seem to bring trouble.
