@@ -1,0 +1,15 @@
+now it is very obvious to me on ubuntu 9.10(and 9.04) if you try to config
+wired and wireless connection altogether, the pppoe connection will become fairly
+unstable.
+My current solution is to remove NM on 9.10,  and now things are fine.
+but I don't know yet  how to config a wireless connction by hand without NM
+
+below are some I've succeeded in:
+
+	root@vivion-laptop:~# iwconfig wlan0 mode ad-hoc
+	Error for wireless request "Set Mode" (8B06) :
+	    SET failed on device wlan0 ; Device or resource busy.
+	root@vivion-laptop:~# ifdown wlan0
+	ifdown: interface wlan0 not configured
+	root@vivion-laptop:~# ifconfig wlan0 down
+	root@vivion-laptop:~# iwconfig wlan0 mode ad-hoc ##done afer doing ifconfig wlano down
