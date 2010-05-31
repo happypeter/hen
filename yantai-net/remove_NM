@@ -13,3 +13,7 @@ below are some I've succeeded in:
 	ifdown: interface wlan0 not configured
 	root@vivion-laptop:~# ifconfig wlan0 down
 	root@vivion-laptop:~# iwconfig wlan0 mode ad-hoc ##done afer doing ifconfig wlano down
+
+## https://help.ubuntu.com/community/WifiDocs/WiFiHowTo
+
+mode managed is what you want if you are connecting to a wireless router. The channel and esidd will have to be set the same as your router.
