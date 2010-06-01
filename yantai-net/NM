@@ -13,3 +13,13 @@ http://www.ubuntugeek.com/how-to-setup-networkmanager-work-with-pppoe-connection
 
 NO.1: just now I see on NM, that "Wireless Network is disabled", I was confused at first
 but soon realize it is simply because I cloased wifi with <Fn>+<F2>, the FIX is to do the same to active wifi, and it worked.
+
+$$
+
+
+vivion@vivion-laptop:~$ dpkg -r -B network-manager
+dpkg: requested operation requires superuser privilege
+vivion@vivion-laptop:~$ sudo dpkg -r -B network-manager
+dpkg: dependency problems prevent removal of network-manager:
+ network-manager-gnome depends on network-manager (>= 0.7~~svn20080928); however:
+
