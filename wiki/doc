@@ -1,0 +1,6 @@
+## how to check doc
+
+>>> import math
+>>> help(math)
+
+and you can also use "help(peter)" to display your won docstring
