@@ -1,0 +1,13 @@
+today I wrote a random.py with in which I "import random", this brougt strange
+error, and later I found, if the identifier you import is in your CWD, python
+acutally use this one rather than the one from the library.
+
+same happens when you use 
+
+    #include "something.h"
+
+but if you use 
+    
+    #include <something.h>
+
+gcc will ignore the something.h in CWD, and go to the std libs directly
