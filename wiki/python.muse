@@ -4,3 +4,7 @@
 
 ** code style
 http://www.python.org/dev/peps/pep-0008/
+
+# Serve the current directory at http://localhost:8000/
+
+$ python -m SimpleHTTPServer
