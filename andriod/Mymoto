@@ -45,3 +45,15 @@ http://androidandme.com/2009/08/news/how-to-root-a-t-mobile-g1-and-mytouch-3g-an
 Root Motorola Droid on Android 2.0.1:
 
 http://www.redmondpie.com/root-motorola-droid-on-android-2.0.1-9140198/
+
+## nasty bootloader
+
+    Unlike the DROID, the Milestone has a bootloader that only allows signed
+    Firmware to load. This prevents users from booting Custom ROM images not
+    signed by Motorola 
+
+http://en.wikipedia.org/wiki/Motorola_Droid
+
+Moto has long been notorious by closing open source. What did noto do to my me501
+
+I have seen the "security on... fast boot disabled" on my phone, nightmare
