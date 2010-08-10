@@ -1,3 +1,8 @@
+## video format 
+
+    peter@peter-laptop:~/Desktop$ file video-2010-08-11-17-06-53.3gp 
+    video-2010-08-11-17-06-53.3gp: ISO Media, MPEG v4 system, 3GPP
+
 ## uninstall software
 
     setup->application->manage application 
@@ -28,5 +33,15 @@ But, two things worried me:
     my phone(including the mount point of SDcard...)
 
 MotoOS problems:
-1.  force me to use all kinds of stupid apps, motoBlur...
+1.  force me to use all kinds of stupid apps, e.g. motoBlur...
 2.  there is nothing in System/app or bin or xbin/, this means there is no sh available
+
+## I need to study
+
+here is good one: 
+
+http://androidandme.com/2009/08/news/how-to-root-a-t-mobile-g1-and-mytouch-3g-android-phone/
+
+Root Motorola Droid on Android 2.0.1:
+
+http://www.redmondpie.com/root-motorola-droid-on-android-2.0.1-9140198/
