@@ -1,0 +1,32 @@
+## uninstall software
+
+    setup->application->manage application 
+
+## reflashing your OS
+
+reboot while holding camera key, then I see:
+
+    USB, fastboot V0.5
+    
+        verbose boot
+        sys recovery
+
+I choose, "sys recovery" by clicking "volume down" button, and now I see three options:
+
+    reboot your sys
+    apply sdcard:update.zip
+    wip data/factory reset
+
+this means I can do quick root, like this
+
+http://android-dls.com/wiki/index.php?title=Quick_Root
+
+But, two things worried me:
+1.  am I a "Current JF ROM Users" ?
+2.  when I unzip JF's US G1 Cupcake 1.51 ROM, I see a whole new system in it
+    there are things I really want like(shell...), but everything is different from the original os on 
+    my phone(including the mount point of SDcard...)
+
+MotoOS problems:
+1.  force me to use all kinds of stupid apps, motoBlur...
+2.  there is nothing in System/app or bin or xbin/, this means there is no sh available
