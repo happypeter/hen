@@ -10,3 +10,9 @@ goto:
     setup->application->manage application 
 
 you can also uninstall software here, but only those you installed yourself
+
+
+## video format 
+
+    peter@peter-laptop:~/Desktop$ file video-2010-08-11-17-06-53.3gp 
+    video-2010-08-11-17-06-53.3gp: ISO Media, MPEG v4 system, 3GPP
