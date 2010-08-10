@@ -3,9 +3,6 @@
     peter@peter-laptop:~/Desktop$ file video-2010-08-11-17-06-53.3gp 
     video-2010-08-11-17-06-53.3gp: ISO Media, MPEG v4 system, 3GPP
 
-## uninstall software
-
-    setup->application->manage application 
 
 ## reflashing your OS
 
@@ -60,3 +57,5 @@ I have seen the "security on... fast boot disabled" on my phone, nightmare
 
 also a report of "Root access"(Only Driod, not the Milestone, due to the nasty
 bootloader I think), on above wikipedia page, that is great, I will try
+but since Me501 was released after Milestone, so it is very unlikely people can root it.
+since the bootloader is locked for this.
