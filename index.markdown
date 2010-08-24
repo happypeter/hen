@@ -1,9 +1,5 @@
----
-layout: name
-title: Home
-
-section: Home
----
 
 Welcome
 =======
+
+I removed the header here
