@@ -1,6 +1,5 @@
 ---
 layout: default
-title: hen
 ---
 
   <h1>Peter Blog Posts</h1>
