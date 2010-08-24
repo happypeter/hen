@@ -2,7 +2,6 @@
 auto        : false
 lsi         : false
 pygments    : true
-permalink   : none
 markdown    : maruku
 
 maruku:
