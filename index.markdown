@@ -1,3 +1,9 @@
-test
+---
+layout: name
+title: Home
 
-try to config markdown
+section: Home
+---
+
+Welcome
+=======

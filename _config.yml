@@ -1,14 +1,15 @@
-destination: ./_site
-auto:        false
-lsi:         false
-server_port: 4000
-pygments:    false
-markdown:    maruku
-permalink:   date
+---
+auto        : false
+lsi         : false
+pygments    : true
+permalink   : none
+markdown    : maruku
+
 maruku:
-  use_tex:    false
-  use_divs:   false
-  png_dir:    images/latex
-  png_url:    /images/latex
+    use_divs: true
+    use_tex: true
+    png_engine : blahtex
+    png_dir    : images/latex/
+    png_url    : /images/latex/
 
     
