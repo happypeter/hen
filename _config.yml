@@ -1,0 +1,12 @@
+---
+auto        : false
+lsi         : false
+pygments    : true
+permalink   : none
+markdown    : maruku
+
+maruku:
+    use_divs: true
+    use_tex: true
+
+    
