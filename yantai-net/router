@@ -1,4 +1,14 @@
-192.168.62.1/
+## tp-link
 
+tL-WR340G+
+
+192.168.1.1/
 ID: admin
-PW: 1234
+PW: admin
+
+WIFI supported even though I saw no "wifi" in its user mannual
+and it is different from the one I used in Yantai in that you need to first
+login to the router(with wired connection) and config pppoe first before you can connect wirelessly.
+that is bad, but finally both my labtop and me501 android worked.
+
+if you have WAP passwd  protection for the wireless signal, me501 failed todetect the signal, bad bad
