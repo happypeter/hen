@@ -12,3 +12,5 @@ login to the router(with wired connection) and config pppoe first before you can
 that is bad, but finally both my labtop and me501 android worked.
 
 if you have WAP passwd  protection for the wireless signal, me501 failed connect auomatically, you need to go to settings->wireless to do it manually.
+
+NOW: even the wifi is working, I have access to internet. I can not login to the router without the net cable. 
