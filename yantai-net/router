@@ -1,6 +1,6 @@
 ## tp-link
 
-tL-WR340G+
+the one I bought is : _tL-WR340G+_
 
 192.168.1.1/
 ID: admin
@@ -11,4 +11,4 @@ and it is different from the one I used in Yantai in that you need to first
 login to the router(with wired connection) and config pppoe first before you can connect wirelessly.
 that is bad, but finally both my labtop and me501 android worked.
 
-if you have WAP passwd  protection for the wireless signal, me501 failed todetect the signal, bad bad
+if you have WAP passwd  protection for the wireless signal, me501 failed connect auomatically, you need to go to settings->wireless to do it manually.
