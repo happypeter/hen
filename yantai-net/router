@@ -13,4 +13,4 @@ that is bad, but finally both my labtop and me501 android worked.
 
 if you have WAP passwd  protection for the wireless signal, me501 failed connect auomatically, you need to go to settings->wireless to do it manually.
 
-NOW: even the wifi is working, I have access to internet. I can not login to the router without the net cable. 
+NOW: even the wifi is working, I have access to internet. I can not login to the router without the net cable. This make sense, because if the router can be connectted via wifi, my next door neighbor can easily guess the IP of my router, login and set a passwd for his own, I may not even know about this 
