@@ -57,6 +57,7 @@ int find_largest(int b[])
 
 }
 
+// you can not use "sizeof b" inside find_largest
 // and this post clarified this :
 // http://bytes.com/topic/c/answers/519368-how-know-size-integer-array
 //
