@@ -64,8 +64,8 @@ void expand(char * from, char * to)
             }
         }
         else
-            printf("OK!\n"); // FIXME: usually we can add gardian here, but in this case we can not do this easily
-                            // to many cases
+            printf("OK!\n"); // for gardian: we can use if(isalpha()) then goto err; 
+            goto err;        
 
         if(from[i+5] == '-') // if there is still a trailing '-', show it
         {
@@ -91,7 +91,19 @@ void expand(char * from, char * to)
         printf("done \n");
 
     to[j] = '\0';
-
+    if(0) // do we really need this ?
+    {
+        err:
+        {
+            printf("wrong format\n");
+            printf("usage: a-b1-9\n");
+            for (i = 0; i <= j ; i++) 
+            {
+                to[i] = 0;
+            }
+            return ;
+        }
+    }
 }
 
 
