@@ -1,3 +1,5 @@
+# to ignore teating files named like m3-4.c
+m*.c
 a.out
 dd.c
 Makefile
