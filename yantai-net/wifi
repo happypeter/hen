@@ -1,3 +1,10 @@
+# ubuntu wireless
+
+if you are having problems connecting, recheck:
+
+  - the device is turned on
+  - system->admin->aditonal drivers
+
 # wifi setup
 
 now I have ubuntu 910 for both INSPIRON and VOSTRO, but on VOSTRO you need to enable the driver manually:
