@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+
+# 为了保证导出正确， weixin.md 中千万不要随拍加空行
+# 只有两篇日记之间加”一个“空行，其他地方都不要有任何的空行
 str = ''
 File.open("weixin.md", 'r') do |f|
   str = f.read
