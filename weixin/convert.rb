@@ -18,6 +18,7 @@ header = <<HEREDOC
 <head>
   <meta charset="UTF-8">
   <title>weixin</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 HEREDOC
@@ -30,8 +31,8 @@ HEREDOC
 
 # 每一个 div 以 时间戳为开始符，以空行为结束符，所以注意一个微信内部千万不要有空行
 
-str = str.gsub(/\d{8}/, "<div class='card' id='#{$&}'>")
-          .gsub(/^\s*$/, "</div>\n")   # 可以包含0或多个空格的空行
+str = str.gsub(/\d{8}/, "<div class='card' id='#{$&}'>\n<img class='pic-of-day' src='pic-of-day/#{$&}.jpg'></img>\n<div class='text'>")
+          .gsub(/^\s*$/, "</div>\n</div>\n")   # 可以包含0或多个空格的空行
 
 File.open("index.html", 'w') do |f|
   f.write(header)
@@ -42,7 +43,7 @@ File.open("index.html", 'a') do |f|
 end
 
 File.open("index.html", 'a') do |f|
-  f.write(str + "</div>")   # 最后要封口
+  f.write(str + "</div></div>")   # 最后要封口
 end
 
 File.open("index.html", 'a') do |f|
