@@ -50,4 +50,4 @@ File.open("index.html", 'a') do |f|
   f.write(footer)   # 最后要封口
 end
 
-# system 'ssh peter@happyec.org "source .profile &&/home/peter/bin/card_deploy.sh"'
+system 'scp index.html peter@haoduoshipin.com:toy/weixin/'
