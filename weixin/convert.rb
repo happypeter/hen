@@ -31,7 +31,7 @@ HEREDOC
 
 # 每一个 div 以 时间戳为开始符，以空行为结束符，所以注意一个微信内部千万不要有空行
 
-str = str.gsub(/(\d\d\d\d\d\d\d\d)/, "<div class='card' id=\\1>\n<img class='pic-of-day' src='pic-of-day/\\1.jpg'></img>\n<div class='text'>")
+str = str.gsub(/(\d\d\d\d\d\d\d\d)/, "<div class='card' id='\\1'>\n<img class='pic-of-day' src='pic-of-day/\\1.jpg'></img>\n<div class='text'>")
           .gsub(/^\s*$/, "</div>\n</div>\n")   # 可以包含0或多个空格的空行
 
 File.open("index.html", 'w') do |f|
