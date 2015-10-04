@@ -1,3 +1,0 @@
-rm -rf peter-html
-python kkk.py
-firefox ./peter-html/index.html
